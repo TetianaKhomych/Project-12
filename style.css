@@ -1,0 +1,235 @@
+html{
+    height: 100%;
+}
+body{
+    background: url("./bg.png") no-repeat center /cover;
+    position: relative;
+    height: 100%;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0,0,0,.3);
+}
+.authBlock{ 
+    margin-left: auto;
+    width: 496px;
+    height: 100%;
+    background: rgba(233, 233, 233, 0.25);
+    backdrop-filter: blur(5px);
+}
+.authForm{
+    margin: 0 auto;
+    width: 340px;
+    padding-top: 60px;
+    padding-bottom: 166px;
+}
+label {
+	cursor: pointer;
+	text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.radio-container {
+	display: flex;
+	width: 340px;
+	height: 36px;
+	margin: 0 auto;
+	border-radius: 30px;
+	overflow: hidden;
+	position: relative;
+    border: 1px solid #153416;
+	z-index: 1;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label {
+	flex: 1 1 50%;
+	color: azure;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input[type="radio"] ~ span {
+	position: absolute;
+	z-index: -1;
+	top: 2px;
+	left: calc(100% - 2px);
+	transform: translateX(-100%);
+	bottom: 2px;
+	width: 50%;
+	border-radius: 30px;
+    background: #153416;
+	transition: .3s linear;
+}
+
+input[type="radio"]:checked + label + input + label + span {
+	left: 2px;
+	transform: translateX(0);
+}
+.authTitle{
+    margin-top: 80px;
+    margin-bottom: 29px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #FFFFFF;
+}
+.authInput{
+    width: 322px;
+    height: 44px;
+    border-radius: 30px;
+    border: none;
+    background: #929191;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+.authInput::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+
+}
+.authNav{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.authRemember{
+    display: flex;
+    align-items: center;
+}
+.check{
+    width: 15px;
+    height: 15px;
+    border-radius:2px;
+    border: 1px solid #D9D9D9;
+    display: none;
+}
+.check:checked + label::before{
+    background-color: #153416;
+}
+.labelCheck{
+    padding-left: 25px;
+    cursor: auto;
+    position: relative;
+    text-transform: none;
+}
+.labelCheck::before{
+    content: "";
+    position: absolute;
+    top:-1px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius:2px;
+    border: 1px solid #153416;
+}
+.authForgot>a{ 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: underline;
+
+    color: #153416;
+}
+.btnSignIn{
+    cursor: pointer;
+    margin-top: 30px;
+    width: 340px;
+    height: 44px;
+    border: none;
+    border-radius: 30px;
+    background-color: #153416;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #FFFFFF;
+
+}
+.secondNav{ 
+    margin-top: 40px;
+    width: 340px;
+    display: flex;
+    justify-content: center;
+}
+.wrapperNav{
+    display: flex;
+    justify-content: space-between;
+    width: 237px;
+}
+.wrapperNav>p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #153416;
+}
+.wrapperNav>a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: underline;
+
+    color: #FFFFFF;
+}
+.socialText{
+    margin-top: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    text-align: center;
+
+    color: #153416;
+}
+.socialMedia{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.wrapperSocial{
+    display: flex;
+    justify-content: space-between;
+    width: 102px;
+    height: 24px;
+    gap:10px
+}
+svg{
+    width: 24px;
+    height: 24px;
+}

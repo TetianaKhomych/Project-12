@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="authBlock">
+        <div class="authForm">
+            <div class="radio-container">
+
+                <input type="radio" id="leftBtn" name="radio-group" checked>
+                <label for="leftBtn">Вход</label>
+                
+                <input type="radio" id="rightBtn" name="radio-group">
+                <label for="rightBtn">Регистрация</label>
+    
+                <span></span>
+            </div>
+            <p class="authTitle">
+                Вход
+            </p>
+            <input type="email" class="authInput" placeholder="Введите E-mail">
+            <input type="password" class="authInput" placeholder="Пароль">
+            <div class="authNav">
+                <div class="authRemember">
+                    <input class="check" type="checkbox" id="remember">
+                    <label class="labelCheck" for="remember">Запомнить меня</label>
+                </div>
+                <div class="authForgot">
+                    <a href="#">Забыли пароль?</a>
+                </div>
+            </div>
+            <button class="btnSignIn">
+                Войти
+            </button>
+            <div class="secondNav">
+                <div class="wrapperNav">
+                    <p>Еще нет аккаунта?</p>
+                    <a href="">Зарегистрироваться</a>
+                </div>
+            </div>
+            <p class="socialText">
+                Или войдите через
+            </p>
+            <nav class="socialMedia">
+                <div class="wrapperSocial">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./sprite-socialmedia.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./sprite-socialmedia.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="./sprite-socialmedia.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
