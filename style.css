@@ -26,7 +26,7 @@ body::before{
     margin: 0 auto;
     width: 340px;
     padding-top: 60px;
-    padding-bottom: 166px;
+    padding-bottom: 60px;
 }
 label {
 	cursor: pointer;
@@ -102,6 +102,10 @@ input[type="radio"]:checked + label + input + label + span {
     margin-bottom: 15px;
     padding-left: 20px;
 }
+.authInput:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px #153416;
+}
 .authInput::placeholder{
     font-family: 'Roboto';
     font-style: normal;
@@ -134,7 +138,7 @@ input[type="radio"]:checked + label + input + label + span {
 }
 .labelCheck{
     padding-left: 25px;
-    cursor: auto;
+    cursor: pointer;
     position: relative;
     text-transform: none;
 }
@@ -161,8 +165,8 @@ input[type="radio"]:checked + label + input + label + span {
 .btnSignIn{
     cursor: pointer;
     margin-top: 30px;
-    width: 340px;
-    height: 44px;
+    width: 100%;
+    padding: 15px 0;
     border: none;
     border-radius: 30px;
     background-color: #153416;
